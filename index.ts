@@ -12,6 +12,7 @@ app.use(
 	cors({
 		origin: [
 			'http://localhost:5173',
+			'https://fdg312.github.io',
 			'https://fdg312.github.io/test_alpha_project',
 		],
 		credentials: true,
@@ -23,6 +24,6 @@ app.get('/', (req: Request, res: Response) => {
 	res.send('Hello World!')
 })
 
-app.listen(port, () => {
+app.listen(Number(port), '0.0.0.0', () => {
 	console.log(`Server is running on port ${port}`)
 })
