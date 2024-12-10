@@ -66,3 +66,11 @@ export const deleteProduct = async (req: Request, res: Response) => {
 	})
 	res.json(product)
 }
+
+export const getProductById = async (req: Request, res: Response) => {
+	const { id } = req.params
+	const product = await prisma.product.findUnique({
+		where: { id },
+	})
+	res.json(product)
+}
