@@ -13,7 +13,7 @@
 		/* Language and Environment */
 		"target": "es2016",
 		"outDir": "./dist",
-		"rootDir": "./" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+		"rootDir": "./src" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
 		// "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
 		// "jsx": "preserve",                                /* Specify what JSX code is generated. */
 		// "experimentalDecorators": true,                   /* Enable experimental support for legacy experimental decorators. */
@@ -110,6 +110,6 @@
 		// "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
 		"skipLibCheck": true /* Skip type checking all .d.ts files. */
 	},
-	"include": ["./**/*"],
+	"include": ["src/**/*"],
 	"exclude": ["node_modules"]
 }
